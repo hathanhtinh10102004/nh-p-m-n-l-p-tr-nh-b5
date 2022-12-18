@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        function tinh()
+        {
+            let number = prompt("nhap so :","");
+            let n = number;
+            let rev = 0, remaining;
+            while(n>0){
+                remaining = n%10;
+                rev = rev *10+remaining;
+                n=Math.floor(n/10);
+            }
+            document.write("so can dao nguoc : " +number+ "</br> so dao nguoc : "+rev+"\n")
+        }
+    </script>
+</head>
+<body onload="tinh();">
+    
+</body>
+</html>
